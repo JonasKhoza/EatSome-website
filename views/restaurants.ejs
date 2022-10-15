@@ -1,0 +1,33 @@
+<%- include( "includes/head") %>
+    <link rel="stylesheet" href="/styles/restaurant.css" />
+    
+  </head>
+  <body>
+     <%- include( "includes/header") %>
+     <%- include( "includes/sideDrawer") %>
+    <main>
+      <h2 class="restaurants-heading">Recommended restaurants</h2>
+      <h3 class="sub-restaurants-heading">
+        Find your favorite restaurants with the help of others
+      </h3>
+       <form action="/restaurants" method="GET">
+        <input type="hidden" value="<%= nextOrder %>" name="order"/>
+        <button class="hover">Change Order</button>
+       </form>
+      
+      <ul>
+        <% for ( let restaurant of restaurants) { %>
+        <li>
+          <article class="restaurant">
+            <h1><%= restaurant.name %></h1>
+            <h2><%= restaurant.type %></h2>
+            <address><%= restaurant.address %></address>
+            <p><%= restaurant.description %></p>
+            <p>shared by: <cite><%= restaurant.author %></cite></p>
+            <a href="/restaurants/<%= restaurant._id%>">View restaurant</a>
+          </article>
+        </li>
+        <% } %>
+      </ul>
+    </main>
+<%- include( "includes/footer") %>

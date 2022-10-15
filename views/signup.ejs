@@ -1,0 +1,34 @@
+  <%- include( "includes/head") %>
+      <link rel="stylesheet" href="/styles/forms.css" />
+  </head>
+  <body>
+     <%- include( "includes/header") %>
+     <%- include( "includes/sideDrawer") %>
+  
+  <main>
+      <h1 class="heading">Create new account</h1>
+
+      <% if (inputData.hasError) { %> 
+        <p class="warning"><%= inputData.message %></p>
+        <% } %> 
+
+      
+   
+      <form id="form" action="/signup" method="POST">
+        
+        <p><label for="email">E-Mail:</label></p>
+        <input type="email" id="email" name="email" value="<%= inputData.email %>" required />
+
+        <p><label for="confirm-email">Confirm-Email:</label></p>
+        <input type="email" id="confirm-email" name="confirm-email" value="<%=inputData.confirmEmail%>"  required />
+
+        <p><label for="password">Password:</label></p>
+        <input type="password" id="password" name="password" value="<%= inputData.password %>"  required />
+
+
+        <p><button>Create account</button></p>
+
+        <p><a href="/login">Login instead</a></p>
+      </form>
+    </main>
+<%- include( "includes/footer") %>

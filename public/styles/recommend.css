@@ -1,0 +1,44 @@
+.heading {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+#form {
+  width: 60%;
+  background-color: var(--white);
+  padding: 0.2rem 0.8rem;
+  border-radius: 4px;
+}
+
+p label {
+  display: block;
+  text-align: left;
+  margin: 0.3rem 0;
+  font-size: 1.1rem;
+}
+
+p input {
+  width: 95%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+}
+
+p textarea {
+  width: 95%;
+  resize: vertical;
+  font: inherit;
+  font-size: 1.1rem;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+button {
+  background-color: darkorange;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid darkorange;
+  font: inherit;
+}

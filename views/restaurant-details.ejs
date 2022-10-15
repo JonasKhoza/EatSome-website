@@ -1,0 +1,19 @@
+<%- include( "includes/head") %>
+    <link rel="stylesheet" href="/styles/restaurant.css" />
+     <link rel="stylesheet" href="/styles/restaurant-details.css" />
+
+  </head>
+  <body>
+  <%- include( "includes/header") %>
+    <%- include( "includes/sideDrawer") %>
+    <main>
+           <article class="restaurant">
+           <h1><%= restaurant.name %></h1>
+           <p><%=restaurant.type%> | <%=restaurant.address%></p>
+           <p><cite><%=restaurant.author%></cite> | <%= restaurant.humanReadableDate %></p>
+           <p><%=restaurant.description%></p>
+           <p><a href="<%=restaurant.website%>">View website</a></p>
+          </article>
+      </ul>
+    </main>
+<%- include( "includes/footer") %>

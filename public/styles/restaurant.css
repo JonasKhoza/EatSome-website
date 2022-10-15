@@ -1,0 +1,100 @@
+ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.restaurants-heading {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+}
+
+.sub-restaurants-heading {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.restaurant {
+  border: 1px solid var(--black-400);
+  border-radius: 4px;
+  padding: 1rem;
+}
+.restaurant h1 {
+  font-size: 1.1rem;
+  padding: 0.5rem;
+}
+
+.restaurant h2 {
+  font-size: 1rem;
+  padding: 0.4rem;
+}
+
+.restaurant p {
+  margin: 0.8rem;
+}
+
+.restaurant a {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0.5rem;
+  text-decoration: none;
+  background-color: darkorange;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 980px) {
+  ul {
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+button {
+  background-color: transparent;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border: 1.5px solid darkorange;
+  border-radius: 4px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.hover:hover {
+  color: darkorange;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-400);
+}

@@ -1,0 +1,84 @@
+.heading {
+  margin: 3rem 0;
+}
+#form {
+  width: 28rem;
+  padding: 1rem 4rem;
+  font: inherit;
+  background-color: var(--sixth-gray);
+  border-radius: 3px;
+  
+}
+
+p {
+  text-align: center;
+  font: inherit;
+  margin: 0.6rem 0;
+}
+
+p label {
+  font: inherit;
+  color: var(--white);
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem 0;
+  border: none;
+  border-radius: 3px;
+  font: inherit;
+}
+
+input:focus {
+  outline: none;
+}
+hr {
+  margin-top: 1rem;
+  width: 100%;
+  font: inherit;
+}
+button {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  font: inherit;
+  color: var(--first-gray);
+  background-color: var(--primary-gray1);
+  border-radius: 3px;
+}
+
+p a {
+  text-decoration: none;
+  color: var(--primary-gray2);
+  font: inherit;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  font-size: 1.1rem;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.image-preview {
+  width: 10rem;
+  display: flex;
+  margin: 0.5rem;
+}
+
+.image-preview .file {
+  width: 4rem;
+  margin: 0 0.5rem;
+}
+
+.image-preview img {
+  width: 6rem;
+}
+
+@media screen and (max-width: 540px) {
+  #form {
+    width: 95%;
+  }
+}

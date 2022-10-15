@@ -1,0 +1,17 @@
+<aside class="sideDrawer">
+  <nav>
+    <ul>
+      <li><a href="/restaurants">Browse restaurants</a></li>
+      <% if (!locals.isAuth || !locals.uid) { %>
+      <li><a href="/signup">Signup</a></li>
+      <li><a href="/login">Login</a></li>
+      <% } %> <% if (locals.isAuth || locals.uid) { %>
+      <li><a href="/recommend">Share a restaurant</a></li>
+      <form action="/logout" method="POST">
+        <button class="btn">Logout</button>
+      </form>
+      <% } %>
+      <li><a href="/about">About EatMore</a></li>
+    </ul>
+  </nav>
+</aside>
